@@ -57,7 +57,7 @@ Release Notes.
 * https://github.com/openshiftio/appdev-documentation/issues/283[Issue
 283] - Describe Build and Deploy process in more detail
 
-== link:https://github.com/openshiftio/appdev-documentation/releases/tag/2017-09-29[2017-09-08 Release]
+== link:https://github.com/openshiftio/appdev-documentation/releases/tag/2017-09-08[2017-09-08 Release]
 
 * https://github.com/openshiftio/appdev-documentation/issues/623[Issue
 623] - Create appendix in nodejs guide explaining nodeshift plugin
