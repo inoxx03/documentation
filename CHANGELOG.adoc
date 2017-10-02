@@ -1,5 +1,62 @@
 = Change Log
 
+== link:https://github.com/openshiftio/appdev-documentation/releases/tag/2017-09-29[2017-09-29 Release]
+
+* https://github.com/openshiftio/appdev-documentation/issues/671[Issue
+671] - ZIP download links in booster descriptions point to Using
+OpenShift Online to Create a Booster
+* https://github.com/openshiftio/appdev-documentation/issues/667[Issue
+667] - Add note about windows option for install script
+* https://github.com/openshiftio/appdev-documentation/issues/658[Issue
+658] - Update GSG paragraph around minishift
+* https://github.com/openshiftio/appdev-documentation/issues/655[Issue
+655] - Improve validating performance on slow connections
+* https://github.com/openshiftio/appdev-documentation/issues/648[Issue
+648] - Fix link title in crud mission intro
+* https://github.com/openshiftio/appdev-documentation/issues/647[Issue
+647] - Check capitalisation of headings for consistency
+* https://github.com/openshiftio/appdev-documentation/issues/645[Issue
+645] - take editing pass at node.js configmap content
+* https://github.com/openshiftio/appdev-documentation/issues/644[Issue
+644] - Update "continuous delivery" title in GSG to "build and deploy"
+* https://github.com/openshiftio/appdev-documentation/issues/638[Issue
+638] - Document keycloak configuration process
+* https://github.com/openshiftio/appdev-documentation/issues/637[Issue
+637] - Refactor instructions and mentions of pipelines
+* https://github.com/openshiftio/appdev-documentation/issues/634[Issue
+634] - Update READMEs with local runtime pre-requisites
+* https://github.com/openshiftio/appdev-documentation/issues/633[Issue
+633] - Add new section on S2I build for launcher
+* https://github.com/openshiftio/appdev-documentation/issues/632[Issue
+632] - Consider names of paths in booster creation
+* https://github.com/openshiftio/appdev-documentation/issues/586[Issue
+586] - Add launcher frontend test to PR testing
+* https://github.com/openshiftio/appdev-documentation/issues/566[Issue
+566] - add a note to release notes that current Fabric8 Maven plugin
+doesn't work with OpenShift 3.6
+* https://github.com/openshiftio/appdev-documentation/issues/559[Issue
+559] - Delete is not a trashcan icon in minishift minishift v1.5.0
+* https://github.com/openshiftio/appdev-documentation/issues/552[Issue
+552] - Enable server-side checking for launchpad files
+* https://github.com/openshiftio/appdev-documentation/issues/543[Issue
+543] - Figure out a way to display $ separately for command blocks
+* https://github.com/openshiftio/appdev-documentation/issues/525[Issue
+525] - Update launcher urls
+* https://github.com/openshiftio/appdev-documentation/issues/449[Issue
+449] - Update Minishift install guide to match the latest Minishift
+version released
+* https://github.com/openshiftio/appdev-documentation/issues/413[Issue
+413] - Publish Contribution Guide
+* https://github.com/openshiftio/appdev-documentation/issues/389[Issue
+389] - Document process for updating catalog for local minishift testing
+* https://github.com/openshiftio/appdev-documentation/issues/325[Issue
+325] - Add a Required infrastructure Component Versions Section to the
+Release Notes.
+* https://github.com/openshiftio/appdev-documentation/issues/309[Issue
+309] - Create a Glossary
+* https://github.com/openshiftio/appdev-documentation/issues/283[Issue
+283] - Describe Build and Deploy process in more detail
+
 == link:https://github.com/openshiftio/appdev-documentation/releases/tag/2017-09-08[2017-09-08 Release]
 
 * https://github.com/openshiftio/appdev-documentation/issues/623[Issue
