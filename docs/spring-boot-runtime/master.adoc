@@ -17,7 +17,7 @@ include::topics/sb-features-and-frameworks-summary.adoc[leveloffset=+2]
 
 == Monitoring
 
-This section contains information about monitoring your {SpringBoot}&ndash;based application running on OpenShift.
+This section contains information about monitoring your {SpringBoot}&#x2013;based application running on OpenShift.
 
 === Accessing JVM metrics for your application on OpenShift
 
