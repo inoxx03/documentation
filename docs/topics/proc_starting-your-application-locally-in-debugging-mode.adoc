@@ -1,13 +1,22 @@
-
 [#starting-your-application-locally-in-debugging-mode_{context}]
 = Starting Your Application Locally in Debugging Mode
 
 One of the ways of debugging a Maven-based project is manually launching the application while specifying a debugging port, and subsequently connecting a remote debugger to that port.
 This method is applicable at least to the following deployments of the application:
 
-* When launching the application manually using the `mvn wildfly-swarm:run` goal.
+ifdef::wf-swarm[]
+* When launching the application manually using the `mvn wildfly-swarm:run`goal.
+endif::[]
+ifdef::vertx[]
+* When launching the application manually using the `mvn vertx:run`goal.
+endif::[]
+ifdef::spring-boot[]
+* When launching the application manually using the `mvn spring-boot:run`goal.
+endif::[]
+ifndef::wf-swarm[]
 * When starting the application without waiting for the it to exit using the `mvn wildfly-swarm:start` goal.
 This is useful especially when performing integration testing.
+endif::[]
 * When using the Arquillian adapter for {runtime}.
 
 .Prerequisites
@@ -19,13 +28,26 @@ This is useful especially when performing integration testing.
 . In a console, navigate to the directory with your application.
 . Launch your application and specify the debug port using the `-Dswarm.debug.port` argument:
 +
---
+ifdef::wf-swarm[]
 [source,bash,options="nowrap"]
 ----
 $ mvn wildfly-swarm:run -Dswarm.debug.port=$PORT_NUMBER
 ----
+endif::[]
+ifdef::vertx[]
+[source,bash,options="nowrap"]
+----
+vertx:run -Dvertx.debug=true -Dvertx.debug.suspend=true|false -Dvertx.debug.port=$PORT_NUMBER
+----
+endif::[]
+ifdef::spring-boot[]
+[source,bash,options="nowrap"]
+----
+$ mvn wildfly-swarm:run -Dspring-boot.debug.port=$PORT_NUMBER
+----
+endif::[]
+
 
 Here, `$PORT_NUMBER` is an unused port number of your choice.
 Remember this number for the remote debugger configuration.
 --
-
