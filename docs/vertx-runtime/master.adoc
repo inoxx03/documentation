@@ -31,8 +31,10 @@ include::topics/configuring-vertx.adoc[leveloffset=+2]
 This sections contains information about debugging your {WildFlySwarm}&#x2013;based application both in local and remote deployments.
 
 === Remote Debugging
+:context: 
 
 To remotely debug an application, you must first configure it to start in a debugging mode, and then attach a debugger to it.
+
 
 include::topics/proc_starting-your-application-locally-in-debugging-mode.adoc[leveloffset=+3]
 
