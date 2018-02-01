@@ -52,9 +52,9 @@ To remotely debug an application, you must first configure it to start in a debu
 
 include::topics/proc_starting-your-application-locally-in-debugging-mode.adoc[leveloffset=+3]
 
-//:parameter-uberjar-documented:
-//include::topics/proc_starting-an-uberjar-in-debugging-mode.adoc[leveloffset=+3]
-//:parameter-uberjar-documented!:
+:parameter-uberjar-documented:
+include::topics/proc_starting-an-uberjar-in-debugging-mode.adoc[leveloffset=+3]
+:parameter-uberjar-documented!:
 
 include::topics/proc_starting-your-application-on-openshift-in-debugging-mode.adoc[leveloffset=+3]
 
