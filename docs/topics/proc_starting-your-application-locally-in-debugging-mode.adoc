@@ -8,7 +8,7 @@ ifdef::wf-swarm[]
 * When launching the application manually using the `mvn wildfly-swarm:run`goal.
 endif::[]
 ifdef::vertx[]
-* When launching the application manually using the `mvn vertx:run`goal.
+* When launching the application manually using the `mvn vertx:debug` goal. This starts the application with debugging enabled.
 endif::[]
 ifdef::spring-boot[]
 * When launching the application manually using the `mvn spring-boot:run`goal.
@@ -26,7 +26,15 @@ endif::[]
 .Procedure
 
 . In a console, navigate to the directory with your application.
+ifdef::wf-swarm[]
 . Launch your application and specify the debug port using the `-Dswarm.debug.port` argument:
+endif::[]
+ifdef::vertx[]
+. Launch your application and specify the debug port using the `-Ddebug.port` argument:
+endif::[]
+ifdef::spring-boot[]
+. Launch your application and specify the debug port using the `-Dspring-boot.debug.port` argument:
+endif::[]
 +
 ifdef::wf-swarm[]
 [source,bash,options="nowrap"]
@@ -37,17 +45,15 @@ endif::[]
 ifdef::vertx[]
 [source,bash,options="nowrap"]
 ----
-vertx:run -Dvertx.debug=true -Dvertx.debug.suspend=true|false -Dvertx.debug.port=$PORT_NUMBER
+vertx:run -Dvertx.debug=true -Ddebug.port=$PORT_NUMBER
 ----
 endif::[]
 ifdef::spring-boot[]
 [source,bash,options="nowrap"]
 ----
-$ mvn wildfly-swarm:run -Dspring-boot.debug.port=$PORT_NUMBER
+$ mvn spring-boot:run -Drun.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=$PORT_NUMBER"
 ----
 endif::[]
 
-
 Here, `$PORT_NUMBER` is an unused port number of your choice.
 Remember this number for the remote debugger configuration.
---
