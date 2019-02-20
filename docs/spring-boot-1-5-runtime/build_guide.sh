@@ -1,4 +1,4 @@
-GUIDE_HTML_NAME=spring-boot-runtime.html
+GUIDE_HTML_NAME=spring-boot-1-5-runtime.html
 OUTPUT_DIR=../../html/docs
 
 rm -r $OUTPUT_DIR/images/
