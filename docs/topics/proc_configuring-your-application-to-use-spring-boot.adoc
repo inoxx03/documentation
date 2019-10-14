@@ -48,7 +48,7 @@ Reference the {SpringBoot} BOM (Bill of Materials) artifact in the `pom.xml` fil
 ----
 --
 
-. Specify the repositories containing {ProductShortName} {SpringBoot} Starters and the {SpringBoot} Maven Plugin:
+. Specify the repositories containing {SpringBoot} Starter artifacts and the {SpringBoot} Maven Plugin:
 +
 --
 [source,xml,subs="attributes+",options="nowrap"]
